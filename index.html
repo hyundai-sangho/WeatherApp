@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>날씨 앱</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="search-box">
+				<i class="fa-solid fa-location-dot"></i>
+				<input type="text" placeholder="지역 입력" />
+				<button class="fa-solid fa-magnifying-glass"></button>
+			</div>
+
+			<div class="not-found">
+				<img src="images/404.png" alt="404 에러 이미지" />
+				<p>잘못된 위치</p>
+			</div>
+
+			<div class="weather-box">
+				<img src="" alt="" />
+				<p class="temperature"></p>
+				<p class="description"></p>
+			</div>
+
+			<div class="weather-details">
+				<div class="humidity">
+					<div class="fa-solid fa-water"></div>
+					<div class="text">
+						<span></span>
+						<p>습기</p>
+					</div>
+				</div>
+
+				<div class="wind">
+					<i class="fa-solid fa-wind"></i>
+					<div class="text">
+						<span></span>
+						<p>풍속</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+		<script src="weatherApiKey.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>
